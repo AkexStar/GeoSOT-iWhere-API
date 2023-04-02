@@ -8,7 +8,6 @@ The OpenAPI building blocks defined by the specification as well as complete bun
 
 ## 什么是GeoSOT-2D
 
-GeoSOT stands for Geographic coordinate Subdividing grid with One dimension integral coding on 2^n-Tree. It is a global grid model based on 2^n one-dimensional integral arrays. GeoSOT is designed to address the shortcomings of using latitude and longitude as geographic location identifiers, such as complex descriptions, lack of regional features, and high computational complexity. The GeoSOT grid system is based on the subdivision of the earth’s surface into multi-level grid cells using recursive octree division. The GeoSOT grid has characteristics such as identifiability, hierarchy, aggregation, and association. It can achieve organic association between levels and provide a basis for multi-scale map expression.
 GeoSOT（Geographic Coordinate Subdividing Grid with One Dimension Integral Coding on 2n-Tree）是基于2n一维整型数组全球经纬剖分网格。
 
 GeoSOT-2D全球经纬剖分网格是基于地理坐标系统划分的网格系统，可以无缝覆盖全球，并且网格之间连接较为均匀、稳定，其剖分网格具有可标识性、层次性、聚合性和关联性等特点，可实现层次之间的有机关联，为地图多尺度表达提供基础。该网格通过经纬网进行划分，因此与国家标准图幅很好地聚合和关联，能够方便地与现在主要的多种类型数据进行转换，有利于多源数据的兼容以及跨部门、跨系统之间的空间数据的整合和共享。
