@@ -1,9 +1,18 @@
 {
   "openapi": "3.0.1",
   "info": {
-    "title": "OGC-DGGS-API",
-    "description": "",
+    "title": "GeoSOT-iwhere-openapi",
+    "description": "- GeoSOT网格计算引擎iWhere-API说明\n- 遵循openAPI接口规则\n- [GitHub链接地址](https://github.com/AkexStar/GeoSOT-iWhere-API)\n- [可视化网页地址](https://www.iwhere.com/geosot3d-web)   ",
+    "contact": {
+      "name": "GeoSOT-Li.Jintao",
+      "url": "https://github.com/AkexStar/GeoSOT-iWhere-API",
+      "email": "lijintao.alex@qq.com"
+    },
     "version": "1.2.5"
+  },
+  "externalDocs": {
+    "description": "iwhereGIS_engine网格数据引擎用户手册V1.2.4",
+    "url": "https://github.com/AkexStar/GeoSOT-iWhere-API/blob/main/iwhereGIS_engine%E7%BD%91%E6%A0%BC%E6%95%B0%E6%8D%AE%E5%BC%95%E6%93%8E%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8CV1.2.4.pdf"
   },
   "servers": [
     {
@@ -13,29 +22,26 @@
   ],
   "tags": [
     {
-      "name": "iWhere API"
+      "name": "Feature2ZoneID 地理要素转网格编码集"
     },
     {
-      "name": "iWhere API/Feature2ZoneID 地理要素转网格编码集"
+      "name": "Geocode Conversion 编码转换"
     },
     {
-      "name": "iWhere API/Geocode Conversion 编码转换"
+      "name": "Zonal Attribute 网格地理属性"
     },
     {
-      "name": "iWhere API/Zonal Attribute 网格地理属性"
+      "name": "Topo Query 网格拓扑查询"
     },
     {
-      "name": "iWhere API/Topo Query 网格拓扑查询"
-    },
-    {
-      "name": "iWhere API/Spatial Compute 空间计算"
+      "name": "Spatial Compute 空间计算"
     }
   ],
   "paths": {
     "/geosot/decimal2quaternary": {
       "post": {
         "tags": [
-          "iWhere API/Geocode Conversion 编码转换"
+          "Geocode Conversion 编码转换"
         ],
         "summary": "2D网格编码的进制转换(十进制转换为四进制)",
         "description": "将网格编码从十进制转换为四进制",
@@ -82,7 +88,7 @@
     "/geosot/quaternary2decimal": {
       "post": {
         "tags": [
-          "iWhere API/Geocode Conversion 编码转换"
+          "Geocode Conversion 编码转换"
         ],
         "summary": "2D网格编码的进制转换(四进制转换为十进制)",
         "description": "将网格编码从四进制转换为十进制",
@@ -129,7 +135,7 @@
     "/geosot/decimal2binary": {
       "post": {
         "tags": [
-          "iWhere API/Geocode Conversion 编码转换"
+          "Geocode Conversion 编码转换"
         ],
         "summary": "2D网格编码的进制转换(十进制转换为二进制)",
         "description": "将网格编码从十进制转换为二进制",
@@ -176,7 +182,7 @@
     "/geosot/binary2decimal": {
       "post": {
         "tags": [
-          "iWhere API/Geocode Conversion 编码转换"
+          "Geocode Conversion 编码转换"
         ],
         "summary": "2D网格编码的进制转换(二进制转换为十进制)",
         "description": "将网格编码从二进制转换为十进制",
@@ -223,7 +229,7 @@
     "/geosot/bit_extract_geo_num": {
       "post": {
         "tags": [
-          "iWhere API/Geocode Conversion 编码转换"
+          "Geocode Conversion 编码转换"
         ],
         "summary": "按位提取2D网格编码(十进制)",
         "description": "根据给定的网格编码、待提取编码起止位,进制,返回待提取的网格编码",
@@ -270,7 +276,7 @@
     "/geosot/geography_mean_geo_num": {
       "post": {
         "tags": [
-          "iWhere API/Zonal Attribute 网格地理属性"
+          "Zonal Attribute 网格地理属性"
         ],
         "summary": "2D网格编码地理含义真实性判断",
         "description": "根据给定的网格编码,判断地理含义的真实性",
@@ -317,7 +323,7 @@
     "/geosot/center_point": {
       "post": {
         "tags": [
-          "iWhere API/Zonal Attribute 网格地理属性"
+          "Zonal Attribute 网格地理属性"
         ],
         "summary": "2D网格中心经纬度",
         "description": "计算单个网格编码的中心经纬度",
@@ -367,7 +373,7 @@
     "/geosot/center_point2": {
       "post": {
         "tags": [
-          "iWhere API/Geocode Conversion 编码转换"
+          "Geocode Conversion 编码转换"
         ],
         "summary": "经纬度对应2D网格的中心经纬度",
         "description": "计算经纬度对应网格编码的中心位置",
@@ -417,7 +423,7 @@
     "/geosot/location_point": {
       "post": {
         "tags": [
-          "iWhere API/Zonal Attribute 网格地理属性"
+          "Zonal Attribute 网格地理属性"
         ],
         "summary": "2D网格的定位点经纬度",
         "description": "计算网格编码的定位点(左下坐标)",
@@ -467,7 +473,7 @@
     "/geosot/scope_geo_num": {
       "post": {
         "tags": [
-          "iWhere API/Zonal Attribute 网格地理属性"
+          "Zonal Attribute 网格地理属性"
         ],
         "summary": "2D网格编码的经纬度范围",
         "description": "根据给定网格编码，计算该网格编码的范围",
@@ -526,7 +532,7 @@
     "/geosot/move_geo_num": {
       "post": {
         "tags": [
-          "iWhere API/Topo Query 网格拓扑查询"
+          "Topo Query 网格拓扑查询"
         ],
         "summary": "2D网格相对位移",
         "description": "给定网格编码、位移在行、列的网格数量,返回对应网格编码相对位移的网格编码",
@@ -573,7 +579,7 @@
     "/geosot/lng_lat2row_col": {
       "post": {
         "tags": [
-          "iWhere API/Geocode Conversion 编码转换"
+          "Geocode Conversion 编码转换"
         ],
         "summary": "经纬度转换为对应2D网格行列号",
         "description": "经纬度转行列号",
@@ -621,7 +627,7 @@
     "/geosot/row_col2lng_lat": {
       "post": {
         "tags": [
-          "iWhere API/Geocode Conversion 编码转换"
+          "Geocode Conversion 编码转换"
         ],
         "summary": "2D网格行列号转所在网格中心经纬度",
         "description": "行列号转经纬度",
@@ -669,7 +675,7 @@
     "/geosot/sort_layer_geo_num_list": {
       "post": {
         "tags": [
-          "iWhere API/Spatial Compute 空间计算"
+          "Spatial Compute 空间计算"
         ],
         "summary": "2D网格编码排序(按层级)",
         "description": "",
@@ -723,7 +729,7 @@
     "/geosot/sort_asc_geo_num_list": {
       "post": {
         "tags": [
-          "iWhere API/Spatial Compute 空间计算"
+          "Spatial Compute 空间计算"
         ],
         "summary": "2D网格编码排序(按编码值)",
         "description": "网格编码排序(按编码值)",
@@ -773,7 +779,7 @@
     "/geosot/geo_num2row_col": {
       "post": {
         "tags": [
-          "iWhere API/Geocode Conversion 编码转换"
+          "Geocode Conversion 编码转换"
         ],
         "summary": "2D网格码转换为所在行列序号",
         "description": "根据给定的网格编码,返回对应层级的行列序号",
@@ -821,7 +827,7 @@
     "/geosot/row_col2geo_num": {
       "post": {
         "tags": [
-          "iWhere API/Geocode Conversion 编码转换"
+          "Geocode Conversion 编码转换"
         ],
         "summary": "2D网格行列序号转换为2D网格码",
         "description": "根据给定的行列序号,返回对应层级的网格编码",
@@ -868,7 +874,7 @@
     "/geosot/geo_num2beidou_grid_code": {
       "post": {
         "tags": [
-          "iWhere API/Geocode Conversion 编码转换"
+          "Geocode Conversion 编码转换"
         ],
         "summary": "2D网格码转北斗网格码",
         "description": "将 GeoSOT 编码转换为北斗网格码",
@@ -916,7 +922,7 @@
     "/geosot/beidou_grid_code2geo_num": {
       "post": {
         "tags": [
-          "iWhere API/Geocode Conversion 编码转换"
+          "Geocode Conversion 编码转换"
         ],
         "summary": "北斗网格码转2D网格码",
         "description": "将北斗网格码转换为 GeoSOT 编码",
@@ -964,7 +970,7 @@
     "/geosot/show_geo_num": {
       "post": {
         "tags": [
-          "iWhere API/Spatial Compute 空间计算"
+          "Spatial Compute 空间计算"
         ],
         "summary": "经纬矩形所在的2D网格的经线数组和纬线数组",
         "description": "根据给定的矩形区域,返回矩形覆盖网格的经线数组和纬线数组",
@@ -1039,7 +1045,7 @@
     "/geosot/point": {
       "post": {
         "tags": [
-          "iWhere API/Feature2ZoneID 地理要素转网格编码集"
+          "Feature2ZoneID 地理要素转网格编码集"
         ],
         "summary": "2D网格编码(点)",
         "description": "将单个点经纬度转换网格编码",
@@ -1086,7 +1092,7 @@
     "/geosot/multi_point": {
       "post": {
         "tags": [
-          "iWhere API/Feature2ZoneID 地理要素转网格编码集"
+          "Feature2ZoneID 地理要素转网格编码集"
         ],
         "summary": "2D网格编码(多点)",
         "description": "将多个点的经纬度转换网格编码",
@@ -1137,7 +1143,7 @@
     "/geosot/line": {
       "post": {
         "tags": [
-          "iWhere API/Feature2ZoneID 地理要素转网格编码集"
+          "Feature2ZoneID 地理要素转网格编码集"
         ],
         "summary": "2D网格编码(线)",
         "description": "将线经纬度转换网格编码",
@@ -1192,7 +1198,7 @@
     "/geosot/multi_line": {
       "post": {
         "tags": [
-          "iWhere API/Feature2ZoneID 地理要素转网格编码集"
+          "Feature2ZoneID 地理要素转网格编码集"
         ],
         "summary": "2D网格编码(多线)",
         "description": "将多条线段经纬度数组转换网格编码,二维数组,第一维代表线段条数,第二维代表每条线段的经纬度",
@@ -1248,7 +1254,7 @@
     "/geosot/rect": {
       "post": {
         "tags": [
-          "iWhere API/Feature2ZoneID 地理要素转网格编码集"
+          "Feature2ZoneID 地理要素转网格编码集"
         ],
         "summary": "2D网格编码(矩形)",
         "description": "将将矩形左上右下经纬度转换网格编码",
@@ -1521,7 +1527,7 @@
     "/geosot/polygon": {
       "post": {
         "tags": [
-          "iWhere API/Feature2ZoneID 地理要素转网格编码集"
+          "Feature2ZoneID 地理要素转网格编码集"
         ],
         "summary": "2D网格编码(多边形)",
         "description": "将多边形经纬度转换网格编码",
@@ -1604,7 +1610,7 @@
     "/geosot/multi_polygon": {
       "post": {
         "tags": [
-          "iWhere API/Feature2ZoneID 地理要素转网格编码集"
+          "Feature2ZoneID 地理要素转网格编码集"
         ],
         "summary": "2D网格编码(多多边形)",
         "description": "将多多边形经纬度数组转换网格编码",
@@ -1923,7 +1929,7 @@
     "/geosot/geojson": {
       "post": {
         "tags": [
-          "iWhere API/Feature2ZoneID 地理要素转网格编码集"
+          "Feature2ZoneID 地理要素转网格编码集"
         ],
         "summary": "2D网格编码(GeoJSON 格式)",
         "description": "将 GeoJSON 标准格式的空间数据,指定网格层级,生成网格编码 支持的 GeoJSON 类型有:\n1. Point\n2. MultiPoint\n3. LineString\n4. MultiLineString\n5. Polygon(支持孔洞)\n6. MultiPolygon(支持孔洞) \n7. Feature\n8. FeatureCollection",
@@ -1976,7 +1982,7 @@
     "/geosot/aggregation_geo_num": {
       "post": {
         "tags": [
-          "iWhere API/Spatial Compute 空间计算"
+          "Spatial Compute 空间计算"
         ],
         "summary": "2D网格聚合(网格编码数组)",
         "description": "给定同一层级的多个网格编码,将其聚合成多个层级的父网格编码",
@@ -2034,7 +2040,7 @@
     "/geosot/aggregation_geo_num2": {
       "post": {
         "tags": [
-          "iWhere API/Spatial Compute 空间计算"
+          "Spatial Compute 空间计算"
         ],
         "summary": "2D网格聚合(多边形)",
         "description": "将多边形经纬度聚合成多个层级的网格编码",
@@ -2072,7 +2078,7 @@
     "/geosot/sphere_distance_geo_num": {
       "post": {
         "tags": [
-          "iWhere API/Spatial Compute 空间计算"
+          "Spatial Compute 空间计算"
         ],
         "summary": "2D网格间球面距离",
         "description": "根据给定的任意两个网格编码,返回两个网格间的球面距离",
@@ -2116,7 +2122,7 @@
     "/geosot/ellipsoid_distance_geo_num": {
       "post": {
         "tags": [
-          "iWhere API/Spatial Compute 空间计算"
+          "Spatial Compute 空间计算"
         ],
         "summary": "2D网格间椭球面距离",
         "description": "根据给定的任意两个网格编码,返回两个网格间的椭球面距离",
@@ -2160,7 +2166,7 @@
     "/geosot/position_geo_num": {
       "post": {
         "tags": [
-          "iWhere API/Topo Query 网格拓扑查询"
+          "Topo Query 网格拓扑查询"
         ],
         "summary": "2D网格相对位置关系",
         "description": "根据给定的任意两个网格编码,返回第二个网格位于第一个网格的位置关系",
@@ -2204,7 +2210,7 @@
     "/geosot/side_len_geo_num": {
       "post": {
         "tags": [
-          "iWhere API/Zonal Attribute 网格地理属性"
+          "Zonal Attribute 网格地理属性"
         ],
         "summary": "2D网格经向和纬向边长",
         "description": "根据给定的网格编码,返回经向、纬向的边长(单位是度、米)",
@@ -2252,7 +2258,7 @@
     "/geosot/area_geo_num": {
       "post": {
         "tags": [
-          "iWhere API/Zonal Attribute 网格地理属性"
+          "Zonal Attribute 网格地理属性"
         ],
         "summary": "2D网格面积",
         "description": "计算网格的面积",
@@ -2299,7 +2305,7 @@
     "/geosot/circumference_geo_num": {
       "post": {
         "tags": [
-          "iWhere API/Zonal Attribute 网格地理属性"
+          "Zonal Attribute 网格地理属性"
         ],
         "summary": "2D网格周长",
         "description": "计算网格的周长",
@@ -2343,7 +2349,7 @@
     "/geosot/topological_relation_geo_num": {
       "post": {
         "tags": [
-          "iWhere API/Topo Query 网格拓扑查询"
+          "Topo Query 网格拓扑查询"
         ],
         "summary": "2D网格间拓扑类型判断(包含/相邻/相离)",
         "description": "网格间拓扑类型判断(包含/相邻/相离)",
@@ -2387,7 +2393,7 @@
     "/geosot/azimuth_geo_num": {
       "post": {
         "tags": [
-          "iWhere API/Spatial Compute 空间计算"
+          "Spatial Compute 空间计算"
         ],
         "summary": "2D网格定量方位计算",
         "description": "网格定量方位计算(网格中心连线方位角)",
@@ -2431,7 +2437,7 @@
     "/geosot/adjoin_azimuth_geo_num": {
       "post": {
         "tags": [
-          "iWhere API/Spatial Compute 空间计算"
+          "Spatial Compute 空间计算"
         ],
         "summary": "2D网格指定方向的邻域网格(精确方向,输入方位角值)",
         "description": "计算指定方向邻域网格(精确方向,输入方位角值)",
@@ -2478,7 +2484,7 @@
     "/geosot/adjoin_direction_geo_num": {
       "post": {
         "tags": [
-          "iWhere API/Spatial Compute 空间计算"
+          "Spatial Compute 空间计算"
         ],
         "summary": "2D网格指定方向的邻域网格(模糊方向,如东南、西北)",
         "description": "计算指定方向邻域网格(模糊方向,如东南、西北)",
@@ -2525,7 +2531,7 @@
     "/geosot/adjoin4_geo_num": {
       "post": {
         "tags": [
-          "iWhere API/Topo Query 网格拓扑查询"
+          "Topo Query 网格拓扑查询"
         ],
         "summary": "2D网格的 4 邻域",
         "description": "根据给定的网格,返回网格相邻(北、南、西、东)的 4 个邻域网格",
@@ -2577,7 +2583,7 @@
     "/geosot/adjoin8_geo_num": {
       "post": {
         "tags": [
-          "iWhere API/Topo Query 网格拓扑查询"
+          "Topo Query 网格拓扑查询"
         ],
         "summary": "2D网格的 8 邻域",
         "description": "根据给定的网格,返回网格相邻(:0-北,1-东北,2-东,3-东南,4-南,5-西南,6-西,7-西 北)的 8 个邻域网格",
@@ -2633,7 +2639,7 @@
     "/geosot/child_geo_num": {
       "post": {
         "tags": [
-          "iWhere API/Topo Query 网格拓扑查询"
+          "Topo Query 网格拓扑查询"
         ],
         "summary": "2D子网格编码",
         "description": "根据网格编码、指定层级,返回其指定层级的子网格编码",
@@ -2706,7 +2712,7 @@
     "/geosot/son_geo_num_list": {
       "post": {
         "tags": [
-          "iWhere API/Topo Query 网格拓扑查询"
+          "Topo Query 网格拓扑查询"
         ],
         "summary": "2D子级网格编码范围",
         "description": "根据网格编码返回子一层级网格编码及坐标范围",
@@ -2779,7 +2785,7 @@
     "/geosot/parent_geo_num": {
       "post": {
         "tags": [
-          "iWhere API/Topo Query 网格拓扑查询"
+          "Topo Query 网格拓扑查询"
         ],
         "summary": "2D父网格编码",
         "description": "根据网格编码、指定层级,返回其指定层级的父网格编码",
@@ -2826,7 +2832,7 @@
     "/geosot/area_geo_num_list": {
       "post": {
         "tags": [
-          "iWhere API/Spatial Compute 空间计算"
+          "Spatial Compute 空间计算"
         ],
         "summary": "2D网格集面积",
         "description": "计算网格的面积",
@@ -2870,7 +2876,7 @@
     "/geosot/avg_distance_geo_num_list": {
       "post": {
         "tags": [
-          "iWhere API/Spatial Compute 空间计算"
+          "Spatial Compute 空间计算"
         ],
         "summary": "2D网格集平均距离",
         "description": "网格集平均距离 (两区域重心间间距)",
@@ -2914,7 +2920,7 @@
     "/geosot/orientation_direction_geo_num_list": {
       "post": {
         "tags": [
-          "iWhere API/Spatial Compute 空间计算"
+          "Spatial Compute 空间计算"
         ],
         "summary": "2D网格集与网格集间定性方向",
         "description": "网格集与网格集间定性方向(两区域重心间方位关系)",
@@ -2958,7 +2964,7 @@
     "/geosot/orientation_azimuth_geo_num_list": {
       "post": {
         "tags": [
-          "iWhere API/Spatial Compute 空间计算"
+          "Spatial Compute 空间计算"
         ],
         "summary": "2D网格集与网格集间定量方向",
         "description": "网格集与网格集间定量方向(两区域重心间方位关系)",
@@ -2996,7 +3002,7 @@
     "/geosot/topological_relation_geo_num_list": {
       "post": {
         "tags": [
-          "iWhere API/Topo Query 网格拓扑查询"
+          "Topo Query 网格拓扑查询"
         ],
         "summary": "2D网格集间拓扑类型判断(包含/相邻/相离)",
         "description": "geosot/topological_relation_geo_num_list",
@@ -3040,7 +3046,7 @@
     "/geosot/outer_rectangle_geo_num_list": {
       "post": {
         "tags": [
-          "iWhere API/Topo Query 网格拓扑查询"
+          "Topo Query 网格拓扑查询"
         ],
         "summary": "2D网格集最小外包矩形对应面片(面片可能数量 1~4 个,输出网格面片和对应层级)",
         "description": "网格集最小外包矩形对应面片(面片可能数量 1~4 个,输出网格面片和对应层级)",
@@ -3096,7 +3102,7 @@
     "/geosot/path_geo_num": {
       "post": {
         "tags": [
-          "iWhere API/Spatial Compute 空间计算"
+          "Spatial Compute 空间计算"
         ],
         "summary": "2D网格路径查询",
         "description": "已知某区域的可通行网格编码,每个网格编码顺序无关,给定区域内的两个网格编码,返回两个网格间的最短路径",
@@ -3134,7 +3140,7 @@
     "/geosot/traversal_geo_num": {
       "post": {
         "tags": [
-          "iWhere API/Spatial Compute 空间计算"
+          "Spatial Compute 空间计算"
         ],
         "summary": "2D多边形内网格遍历",
         "description": "根据给定的多边形范围、网格层级,实现网格从上至下,从左到右的遍历,输出 二维数组每行列数不一定相同,区域宽对应的列数越多,反之亦同",
@@ -3208,7 +3214,7 @@
     "/geosot/video_model": {
       "post": {
         "tags": [
-          "iWhere API/Spatial Compute 空间计算"
+          "Spatial Compute 空间计算"
         ],
         "summary": "2D网格视频空间建模",
         "description": "根据视频覆盖的某一平面可见区域内，像素坐标配准点(4~8 个)、地理坐标 配准点(4~8 个)以及该可见区域范围的像素坐标数组,返回该平面可见区域的 网格编码数组以及每个网格编码对应的像素四边形角点坐标、配准点像素坐 标转配准点的地理坐标透视变换矩阵、配准点地理坐标转配准点像素坐标的 透视变换矩阵",
@@ -3288,7 +3294,7 @@
     "/geosot/point_buffer": {
       "post": {
         "tags": [
-          "iWhere API/Spatial Compute 空间计算"
+          "Spatial Compute 空间计算"
         ],
         "summary": "2D点的缓冲区域",
         "description": "计算单个点的缓冲区域",
@@ -3340,7 +3346,7 @@
     "/geosot/line_buffer": {
       "post": {
         "tags": [
-          "iWhere API/Spatial Compute 空间计算"
+          "Spatial Compute 空间计算"
         ],
         "summary": "2D线的缓冲区域",
         "description": "计算线的缓冲区域",
@@ -3426,7 +3432,7 @@
     "/geosot/polygon_buffer": {
       "post": {
         "tags": [
-          "iWhere API/Spatial Compute 空间计算"
+          "Spatial Compute 空间计算"
         ],
         "summary": "2D面的缓冲区域",
         "description": "计算面的缓冲区域",
@@ -3518,7 +3524,7 @@
     "/geosot/overlay_analysis_intersection": {
       "post": {
         "tags": [
-          "iWhere API/Topo Query 网格拓扑查询"
+          "Topo Query 网格拓扑查询"
         ],
         "summary": "2D叠置分析(交)",
         "description": "给定两组网格编码和层级,进行叠置分析相交运算,返回网格编码数组",
@@ -3574,7 +3580,7 @@
     "/geosot/overlay_analysis_union": {
       "post": {
         "tags": [
-          "iWhere API/Topo Query 网格拓扑查询"
+          "Topo Query 网格拓扑查询"
         ],
         "summary": "2D叠置分析(并)",
         "description": "给定两组网格编码和层级,进行叠置分析并运算,返回网格编码数组",
@@ -3634,7 +3640,7 @@
     "/geosot/grid_heat_gather": {
       "post": {
         "tags": [
-          "iWhere API/Spatial Compute 空间计算"
+          "Spatial Compute 空间计算"
         ],
         "summary": "2D网格热力汇聚",
         "description": "给定网格编码、网格编码对应的热力数据、网格层级、汇聚网格层级,返回汇聚网格层级的网格编码数组,按照汇聚网格层级进行热力数据汇聚的数据数组",
@@ -3685,7 +3691,7 @@
     "/geosot3d/center_point3d": {
       "post": {
         "tags": [
-          "iWhere API/Zonal Attribute 网格地理属性"
+          "Zonal Attribute 网格地理属性"
         ],
         "summary": "3D网格中心经纬度",
         "description": "计算单个网格编码的中心经纬度",
@@ -3734,7 +3740,7 @@
     "/geosot3d/extract_geo_num_2d": {
       "post": {
         "tags": [
-          "iWhere API/Zonal Attribute 网格地理属性"
+          "Zonal Attribute 网格地理属性"
         ],
         "summary": "3D编码中提取2D编码",
         "description": "从三维编码中提取二维编码",
@@ -3781,7 +3787,7 @@
     "/geosot3d/scope_geo_num": {
       "post": {
         "tags": [
-          "iWhere API/Zonal Attribute 网格地理属性"
+          "Zonal Attribute 网格地理属性"
         ],
         "summary": "3D网格体编码地理范围",
         "description": "计算网格体范围",
@@ -3838,7 +3844,7 @@
     "/geosot3d/point3d": {
       "post": {
         "tags": [
-          "iWhere API/Feature2ZoneID 地理要素转网格编码集"
+          "Feature2ZoneID 地理要素转网格编码集"
         ],
         "summary": "3D网格编码(点)",
         "description": "将空间中用经纬高描述的一点转换成网格编码",
@@ -3882,7 +3888,7 @@
     "/geosot3d/sphere": {
       "post": {
         "tags": [
-          "iWhere API/Feature2ZoneID 地理要素转网格编码集"
+          "Feature2ZoneID 地理要素转网格编码集"
         ],
         "summary": "3D网格编码(球)",
         "description": "将用空间中一点的经纬高和半径描述的球体转换成网格",
@@ -3931,7 +3937,7 @@
     "/geosot3d/rect3d": {
       "post": {
         "tags": [
-          "iWhere API/Feature2ZoneID 地理要素转网格编码集"
+          "Feature2ZoneID 地理要素转网格编码集"
         ],
         "summary": "3D网格编码(矩形体)",
         "description": "将规则球面矩形和高的体转换成网格",
@@ -4014,7 +4020,7 @@
     "/geosot3d/polygon3d": {
       "post": {
         "tags": [
-          "iWhere API/Feature2ZoneID 地理要素转网格编码集"
+          "Feature2ZoneID 地理要素转网格编码集"
         ],
         "summary": "3D网格编码(多边形体)",
         "description": "将球面多边形和高度的体转换网格",
@@ -4052,7 +4058,7 @@
     "/geosot3d/polyline3d": {
       "post": {
         "tags": [
-          "iWhere API/Feature2ZoneID 地理要素转网格编码集"
+          "Feature2ZoneID 地理要素转网格编码集"
         ],
         "summary": "3D网格编码(折线体)",
         "description": "将折线体转换成网格",
@@ -4090,7 +4096,7 @@
     "/geosot3d/cylinder": {
       "post": {
         "tags": [
-          "iWhere API/Feature2ZoneID 地理要素转网格编码集"
+          "Feature2ZoneID 地理要素转网格编码集"
         ],
         "summary": "3D网格编码(圆柱)",
         "description": "将三维折线点和半径定义圆柱体转换成网格",
@@ -4143,7 +4149,7 @@
     "/geosot3d/child_geo_num": {
       "post": {
         "tags": [
-          "iWhere API/Topo Query 网格拓扑查询"
+          "Topo Query 网格拓扑查询"
         ],
         "summary": "3D子网格编码",
         "description": "根据网格编码、指定层级,返回其指定层级的子网格编码",
@@ -4196,7 +4202,7 @@
     "/geosot3d/parent_geo_num": {
       "post": {
         "tags": [
-          "iWhere API/Topo Query 网格拓扑查询"
+          "Topo Query 网格拓扑查询"
         ],
         "summary": "3D父网格编码",
         "description": "根据网格编码、指定层级,返回其指定层级的父网格编码",
@@ -4243,7 +4249,7 @@
     "/geosot3d/adjoin6_geo_num": {
       "post": {
         "tags": [
-          "iWhere API/Topo Query 网格拓扑查询"
+          "Topo Query 网格拓扑查询"
         ],
         "summary": "3D网格体的 6 邻域",
         "description": "网格体的 6 邻域",
@@ -4297,7 +4303,7 @@
     "/geosot3d/adjoin26_geo_num": {
       "post": {
         "tags": [
-          "iWhere API/Topo Query 网格拓扑查询"
+          "Topo Query 网格拓扑查询"
         ],
         "summary": "3D网格体的 26 邻域",
         "description": "网格体的 6 邻域",
@@ -4371,7 +4377,7 @@
     "/geosot3d/relative_azimuth": {
       "post": {
         "tags": [
-          "iWhere API/Spatial Compute 空间计算"
+          "Spatial Compute 空间计算"
         ],
         "summary": "3D网格定量方位计算",
         "description": "计算两个网格格网相对方位(GIS 8 方向)。以绝对正北方向为准线，顺时针 为正，逆时针为负，取值范围为 0<ξ<2π",
@@ -4418,7 +4424,7 @@
     "/geosot3d/distance_manhattan": {
       "post": {
         "tags": [
-          "iWhere API/Spatial Compute 空间计算"
+          "Spatial Compute 空间计算"
         ],
         "summary": "3D网格体之间距离编码(曼哈顿计算)",
         "description": "求两个格网在指定层级的曼哈顿距离(路径网格集合和总距离)",
@@ -4465,7 +4471,7 @@
     "/geosot3d/aggregation_intersect": {
       "post": {
         "tags": [
-          "iWhere API/Topo Query 网格拓扑查询"
+          "Topo Query 网格拓扑查询"
         ],
         "summary": "3D网格集间相交关系判断",
         "description": "",
@@ -4503,7 +4509,7 @@
     "/geosot3d/aggregation_adjoin": {
       "post": {
         "tags": [
-          "iWhere API/Topo Query 网格拓扑查询"
+          "Topo Query 网格拓扑查询"
         ],
         "summary": "3D网格集间相邻关系判断",
         "description": "",
@@ -4541,7 +4547,7 @@
     "/geosot3d/aggregation_relationship": {
       "post": {
         "tags": [
-          "iWhere API/Topo Query 网格拓扑查询"
+          "Topo Query 网格拓扑查询"
         ],
         "summary": "3D网格集间拓扑类型关系判断(相邻/相交/相离)",
         "description": "",
@@ -4579,7 +4585,7 @@
     "/geosot3d/rcuboid_buffer": {
       "post": {
         "tags": [
-          "iWhere API/Feature2ZoneID 地理要素转网格编码集"
+          "Feature2ZoneID 地理要素转网格编码集"
         ],
         "summary": "3D网格编码(外包长方体)",
         "description": "",
@@ -4617,7 +4623,7 @@
     "/geosot3d/visual_analysis": {
       "post": {
         "tags": [
-          "iWhere API/Spatial Compute 空间计算"
+          "Spatial Compute 空间计算"
         ],
         "summary": "3D网格可视域分析",
         "description": "已知空间区域环境网格集合，求其中两个格网的是否可视(连线中间没有网格遮挡)",
