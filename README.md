@@ -2,7 +2,7 @@
 
 The OpenAPI building blocks defined by the specification as well as complete bundled example API definition are available [here](https://github.com/AkexStar/GeoSOT-iWhere-API/tree/main/openapi), and can also be visualized and experimented with an example implementation with [SwaggerUI](https://app.swaggerhub.com/apis/Akex/GeoSOT-iwhere-openapi/1.2.4#/) here.
 
-遵循openAPI规范的json文档在[这里](https://github.com/AkexStar/GeoSOT-iWhere-API/tree/main/openapi)获取，本项目同时使用[SwaggerUI](https://app.swaggerhub.com/apis/Akex/GeoSOT-iwhere-openapi/1.2.4#/)进行可视化，可在上面进行在线接口尝试。
+遵循openAPI规范的json文档在[这里](https://github.com/AkexStar/GeoSOT-iWhere-API/tree/main/openapi)获取，本项目同时使用[SwaggerUI](https://app.swaggerhub.com/apis/Akex/GeoSOT-iwhere-openapi/1.2.5#/)进行可视化，可在上面进行在线接口尝试。
 
 <img width="1911" alt="image" src="https://user-images.githubusercontent.com/55226358/227976408-53dc93ba-eef9-4187-a9bb-f87690072c31.png">
 
