@@ -78,7 +78,7 @@
                     "summary": "成功示例",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "geo_num": "G00112322303233231203131"
                     }
                   }
@@ -140,7 +140,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "geo_num": "412869894958481408-23"
                     }
                   }
@@ -202,7 +202,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "geo_num": "0000010110111010110011101111101101100011011101"
                     }
                   }
@@ -264,7 +264,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "geo_num": "412869894958481408-23"
                     }
                   }
@@ -340,7 +340,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "geo_num": "481408"
                     }
                   }
@@ -402,7 +402,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "is_exist": true
                     }
                   }
@@ -465,7 +465,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "coordinates": [
                         105.38107638888889,
                         31.528506944444445
@@ -536,7 +536,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "coordinates": [
                         105.00003472222222,
                         31.000034722222225
@@ -602,7 +602,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "coordinates": [
                         105.38104166666666,
                         31.528472222222224
@@ -678,7 +678,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "geo_num_list": [
                         {
                           "geo_num": "412869894958743552-23",
@@ -768,7 +768,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "geo_num": "412869894958481408-23"
                     }
                   }
@@ -835,7 +835,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "row": 892800,
                       "col": 3772800
                     }
@@ -903,7 +903,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "lat": 11.766666666666666,
                       "lng": 1.2666666666666666
                     }
@@ -966,7 +966,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "geo_num_list": [
                         "414044620331155456",
                         "412869894958481408"
@@ -1030,7 +1030,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "geo_num_list": [
                         "41404331155456",
                         "414044620331155456"
@@ -1094,7 +1094,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "row": 454010,
                       "col": 1517487
                     }
@@ -1162,7 +1162,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "geo_num": "38345468018688-14"
                     }
                   }
@@ -1224,7 +1224,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "beidou_grid_code": "N48H67171CA372",
                       "beidou_grid_level": 7
                     }
@@ -1287,7 +1287,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "geo_num": 412869894958481400,
                       "geo_level": 23
                     }
@@ -1360,7 +1360,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "lons": [
                         132,
                         133,
@@ -1455,7 +1455,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "geo_num": "1188950301625810944-5"
                     }
                   }
@@ -1517,7 +1517,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "geo_num_list": [
                         "1188950301625810944-5",
                         "216172782113783808-5",
@@ -1588,7 +1588,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "geo_num_list": [
                         "1201053725624369152-8",
                         "1201898150554501120-8",
@@ -1660,7 +1660,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "geo_num_list": [
                         "412766423232806912-14",
                         "412767935061295104-14",
@@ -1746,7 +1746,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "geo_num_list": [
                         "1192257632602161152-10",
                         "1192275224788205568-10",
@@ -2040,7 +2040,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "geo_num_list": [
                         "431993720506679296-10",
                         "432011312692723712-10",
@@ -2143,7 +2143,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "geo_num_list": [
                         "5368915278430208-12",
                         "5427189394702336-12",
@@ -2477,7 +2477,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "geo_num_list": [
                         "526542573288816640-17",
                         "526542576510042112-17",
@@ -2545,7 +2545,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "geo_num_list": [
                         526542563625140200,
                         526542563625140200,
@@ -2701,7 +2701,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "distance": 9553.236962581876
                     }
                   }
@@ -2788,7 +2788,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "distance": 9553.23696256257
                     }
                   }
@@ -2875,7 +2875,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "direction": 4
                     }
                   }
@@ -2981,7 +2981,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "lng_length": 0,
                       "lat_length": 0,
                       "side_length_north": 5.94,
@@ -3046,7 +3046,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "area": 45.91
                     }
                   }
@@ -3128,7 +3128,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "circumference": 27.34
                     }
                   }
@@ -3222,7 +3222,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "relation": 3
                     }
                   }
@@ -3309,7 +3309,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "azimuth": 1.4535492208719423
                     }
                   }
@@ -3371,7 +3371,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "geo_num": "412869895001210880-20"
                     }
                   }
@@ -3439,7 +3439,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "geo_num": "412869895017988096-20"
                     }
                   }
@@ -3502,7 +3502,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "geo_num_list": [
                         "412869895101874176-20",
                         "412869894967656448-20",
@@ -3570,7 +3570,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "geo_num_list": [
                         "412869895051542528-20",
                         "412869895034765312-20",
@@ -3700,7 +3700,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "geo_num_list": [
                         {
                           "geo_num": "412869895051542528-21",
@@ -3846,7 +3846,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "geo_num_list": [
                         {
                           "geo_num": "412869895034765312-21",
@@ -3942,7 +3942,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "geo_num": "412869895051542528-20"
                     }
                   }
@@ -4024,7 +4024,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "area": 1630.04
                     }
                   }
@@ -4111,7 +4111,7 @@
                     "summary": "Exception",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "distance": 135.37
                     }
                   }
@@ -4198,7 +4198,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "direction": 2
                     }
                   }
@@ -4341,7 +4341,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "relation": 0
                     }
                   }
@@ -4403,7 +4403,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "geo_num_list": [
                         "41286231035740160",
                         "41286231044128768",
@@ -4568,7 +4568,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "geo_num_list": [
                         [
                           "523490680123686912-10",
@@ -4787,7 +4787,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "geo_num_list": [
                         "526549624551374848-15"
                       ],
@@ -4895,7 +4895,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "geo_num_list": [
                         "1201123252554956800-15",
                         "1201170445655605248-15",
@@ -4972,7 +4972,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "geo_num_list": [
                         "1218276475761852416-10",
                         "1218329252319985664-10",
@@ -5083,7 +5083,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "geo_num_list": [
                         "431061334646325248-10",
                         "431131703390502912-10",
@@ -5195,7 +5195,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "geo_num_list": [
                         "412869895051542528-20",
                         "412869895034765312-20",
@@ -5271,7 +5271,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "geo_num_list": [
                         "412869894531448832-20",
                         "412869894548226048-20",
@@ -5388,7 +5388,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "geo_num_list": [
                         "412853422090354688-9",
                         "525865625239683072-9"
@@ -5458,7 +5458,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "lat": 36.266666666666666,
                       "lng": 117.76666666666667,
                       "height": 29565.327069607065
@@ -5522,7 +5522,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "geo_num_2d": "525883217425727488-10"
                     }
                   }
@@ -5584,7 +5584,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "geo_num_list": [
                         {
                           "height_min": 0,
@@ -5686,7 +5686,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "geo_num": "040493600000000000000000"
                     }
                   }
@@ -5779,7 +5779,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "geo_num_list": [
                         "0404930db000000000000000",
                         "040493292000000000000000",
@@ -5871,7 +5871,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "geo_num_list": [
                         "040491600000000000000000",
                         "040491640000000000000000",
@@ -6103,7 +6103,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "geo_num_list": [
                         "00b21a4986d8200000000000",
                         "00b21a4986d8200000000004",
@@ -6230,7 +6230,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "geo_num_list": [
                         "92fb3e924924924924100824",
                         "92fb3e924924924924104920",
@@ -6306,7 +6306,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "geo_num": "92fb3c924924924924900900"
                     }
                   }
@@ -6368,7 +6368,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "geo_num_list": [
                         "92fb37924924924924804120",
                         "92fb3f924924924924804120",
@@ -6437,7 +6437,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "geo_num_list": [
                         "92fbac924924924924804124",
                         "92fbad924924924924804124",
@@ -6531,7 +6531,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "azimuth": 1.5707963267948966
                     }
                   }
@@ -6598,7 +6598,7 @@
                     "summary": "Success",
                     "value": {
                       "server_status": 200,
-                      "server_error": null,
+                      
                       "distance": 4187186.57
                     }
                   }
